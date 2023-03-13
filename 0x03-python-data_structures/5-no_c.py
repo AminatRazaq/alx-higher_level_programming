@@ -2,10 +2,10 @@
 
 def no_c(my_string):
     """removes all characters c and C from a string"""
-    new_string = ''
-    """Above: we created a new empty string"""
-    for char in my_string:
-        if char != C and char != c:
-            new_string += char
 
-    print(new_string)
+
+    """ join() returns a new string which is the concatenation
+    of the other strings in the iterable specified"""
+    copy = [x for x in my_string if x != 'C' and x!= 'c']
+    """"Below: the "" in return is to show the new empty string"""
+    return ("".join(copy))
