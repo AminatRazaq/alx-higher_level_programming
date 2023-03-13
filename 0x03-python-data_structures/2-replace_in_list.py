@@ -8,4 +8,4 @@ def replace_in_list(my_list, idx, element):
         is because index starts from 0 while
         length starts counting from 1"""
         return (my_list)
-    mylist[idx] = element
+    my_list[idx] = element
