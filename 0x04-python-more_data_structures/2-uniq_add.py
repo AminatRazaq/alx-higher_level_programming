@@ -5,6 +5,6 @@ def uniq_add(my_list=[]):
     uniq_int = set(my_list)
     sum = 0
 
-    for i in range(len(uniq_int)):
-        sum += uniq_int[i]
+    for i in uniq_int:
+        sum += i
     return (sum)
