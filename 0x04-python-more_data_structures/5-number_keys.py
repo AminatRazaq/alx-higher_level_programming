@@ -2,6 +2,9 @@
 
 def number_keys(a_dictionary):
     """returns the number of keys in a dictionary"""
-    num_of_keys = list(a_dictionar())
+    list_of_keys = list(a_dictionar())
+    num_keys = 0
+    for i in list_of_keys:
+        num_keys += 1
 
-    return (len(num_of_keys))
+    return (num_keys)
