@@ -6,4 +6,4 @@ def print_sorted_dictionary(a_dictionary):
     """after listing the keys, we now sort them alphabetically"""
     list_keys.sort()
     for i in list_keys:
-        print("{}: {}".format(i, a_dictionary.get[i]))
+        print("{}: {}".format(i, a_dictionary.ge(i)))
