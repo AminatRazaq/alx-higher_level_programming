@@ -24,8 +24,15 @@ class Square:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-        self._size = value
+        self.__size = value
 
     def area(self):
         """Return the current area of the square."""
         return (self.__size * self.__size)
+
+    def my_print(self):
+        for i in range(self.__size):
+            [print("#", end="") for j in range(self.__size)]
+            print("")
+        if self.__size == 0:
+            print("")
