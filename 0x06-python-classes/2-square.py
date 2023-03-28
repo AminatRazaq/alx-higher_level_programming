@@ -9,13 +9,10 @@ class Square:
         """Initializes size
 
     Args:
-    size(int): the size must be an integer
-    else
-    raise Typeaerror with a message "size must be an integer"
-    If size is less than 0, raise a ValueError
-    exception with the message size must be >= 0"""
+    size(int): the sizeof the square and  must be an integer"""
+
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     elif size < 0:
         raise ValueError("size must be >= 0")
-    self.__size = size 
+    self.__size = size
