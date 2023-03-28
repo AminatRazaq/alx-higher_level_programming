@@ -2,7 +2,6 @@
 
 """Defines Square"""
 
-
 class Square:
     """Reps area of square"""
 
