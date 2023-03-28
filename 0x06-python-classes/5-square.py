@@ -18,8 +18,9 @@ class Square:
         """to retrieve size"""
         return (self.__size)
 
-    @size.setter
+    @propertysetter
     def size(self, value):
+        """To set size"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
