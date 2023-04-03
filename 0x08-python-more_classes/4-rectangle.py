@@ -51,12 +51,21 @@ class Rectangle:
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """returns an “informal” and printable string representation"""
-        if self.__width == 0 or self.__heigth == 0:
+        """Return the printable representation of the Rectangle.
+        Represents the rectangle with the # character.
+        """
+        if self.__width == 0 or self.__height == 0:
             return ("")
-        recta = []
-        for i in range(self.__heigth):
-            [recta.append('#') for j in range(self.__width)]
+
+        rect = []
+        for i in range(self.__height):
+            [rect.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
-                recta.append("\n")
-            return ("".join(rect))
+                rect.append("\n")
+        return ("".join(rect))
+    
+    def __repr__(self):
+        """return a string representation of the rectangle"""
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
