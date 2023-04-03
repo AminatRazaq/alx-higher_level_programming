@@ -54,6 +54,9 @@ class Rectangle:
         """returns an “informal” and printable string representation"""
         if self.__width == 0 or self.__heigth == 0:
             return ("")
+        recta = []
         for i in range(self.__heigth):
-            [print('#', end="") for j in range(self.__width)]
-            print("")
+            [recta.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
+                recta.append("\n")
+            return ("".join(rect))

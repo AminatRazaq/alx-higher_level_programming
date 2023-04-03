@@ -59,4 +59,4 @@ class Rectangle:
             [recta.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
                 recta.append("\n")
-            return ("".join(rect))
+            return ("".join(recta))
