@@ -95,7 +95,7 @@ class Rectangle(Base):
             [print("#", end="") for w in range(self.width)]
             print("")
 
-    def update(self):
+    def update(self, *args):
         """update triangle using args and kwargs
         Args:
             1st arg is id attribute
